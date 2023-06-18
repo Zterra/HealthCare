@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/circle"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/item_likelyrecipe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/item_likelyrecipe_pic"
+            android:text="地中海饮食健康食谱"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/item_likelyrecipe_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:id="@+id/item_likelyrecipe_calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_likelyrecipe_title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/item_likelyrecipe_pic"
+            android:text="1833kcal"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/item_likelyrecipe_divide1"
+            android:layout_width="2dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/item_likelyrecipe_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/item_likelyrecipe_calorie"
+            android:background="#BBBBBC" />
+
+        <TextView
+            android:id="@+id/item_likelyrecipe_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_likelyrecipe_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/item_likelyrecipe_divide1"
+            android:text="心血管"
+            android:textSize="20sp" />
+
+
+        <View
+            android:id="@+id/item_likelyrecipe_divide2"
+            android:layout_width="2dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/item_likelyrecipe_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/item_likelyrecipe_tag1"
+            android:background="#BBBBBC" />
+
+        <TextView
+            android:id="@+id/item_likelyrecipe_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_likelyrecipe_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/item_likelyrecipe_divide2"
+            android:text="海鱼"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

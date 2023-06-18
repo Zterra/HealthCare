@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".person.BasicImforActivity"
+    android:orientation="vertical"
+    android:background="@color/lightgreen"
+    >
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/basicinfor_return">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_left"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/basicinfor_header_img"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="用户名称"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/lightgreen"
+        android:id="@+id/basicinfor_usrname_text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:orientation="vertical"
+        android:background="@drawable/basic_infor_background">
+        <!--用户id-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/basicinfor_usrid_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/login_usr" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/basicinfor_usrid_pic"
+                android:text="用户ID"
+                android:textColor="@color/font_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/basicinfor_id_text"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="12345678"
+                android:textAlignment="center"
+                android:textColor="@color/font_gray"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/font_gray"/>
+
+        <!--性别-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/basicinfor_sex_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/login_usr" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/basicinfor_sex_pic"
+                android:text="性别"
+                android:textColor="@color/font_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/basicinfor_sex_text"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="90dp"
+                android:background="@color/white"
+                android:maxLength="1"
+                android:text="男"
+                android:textAlignment="center"
+                android:textColor="@color/font_gray"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/font_gray"/>
+
+        <!--邮箱-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/basicinfor_email_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/login_usr" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/basicinfor_email_pic"
+                android:text="邮箱"
+                android:textColor="@color/font_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/basicinfor_email_text"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:text="1693103984@qq.com"
+                android:textAlignment="center"
+                android:textColor="@color/font_gray"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/font_gray"/>
+
+        <!--身高-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/basicinfor_phone_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/login_usr" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/basicinfor_phone_pic"
+                android:text="手机号"
+                android:textColor="@color/font_gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/basicinfor_phone_text"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="90dp"
+                android:background="@color/white"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="11"
+                android:text="15381891611"
+                android:textAlignment="center"
+                android:textColor="@color/font_gray"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/font_gray"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="保 存 信 息"
+            android:background="@drawable/login_btn"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/basicinfor_save_btn"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

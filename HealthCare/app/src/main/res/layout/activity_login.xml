@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.example.healthcare.login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_usr"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/login_usr_pic"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/login_usr" />
+
+        <EditText
+            android:id="@+id/login_usr_edit"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:hint="用户名/手机号"
+            android:inputType="text"
+            android:lines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_psw"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login_usr"
+        app:layout_constraintStart_toStartOf="@+id/login_usr"
+        app:layout_constraintTop_toBottomOf="@+id/login_usr"
+        app:layout_constraintVertical_bias="0.1">
+
+        <ImageView
+            android:id="@+id/login_psw_pic"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/login_psw2" />
+
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/login_psw_edit"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:hint="密码"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forget_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:text="忘记密码?"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/login_psw"
+        app:layout_constraintTop_toBottomOf="@+id/login_psw" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/login_loginbtn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn"
+        android:elevation="20dp"
+        android:text="登 录"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/login_psw"
+        app:layout_constraintTop_toBottomOf="@+id/forget_psw" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_register_btn"
+        android:text="注 册"
+        android:textColor="@color/font_gray"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/login_loginbtn"
+        app:layout_constraintEnd_toEndOf="@+id/login_psw"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/login_loginbtn"
+        android:elevation="20dp"
+        android:id="@+id/login_registerbtn"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
